@@ -1,11 +1,10 @@
 package core.basesyntax;
-
 public class UserService {
 
     public void registerUser(User user) {
         String password = user.getPassword();
         String repeatPassword = user.getRepeatPassword();
-        PasswordValidator passwordValidator = new PasswordValidator(); // Pamiętaj o usunięciu "X" z przodu!
+        PasswordValidator passwordValidator = new PasswordValidator();
 
         try {
             passwordValidator.validate(password, repeatPassword);
