@@ -16,6 +16,6 @@ public class UserService {
     }
 
     public void saveUser(User user) {
-        System.out.println("User saved: " + user);
+        System.out.print("User " + user + " was saved to database!!!");
     }
 }
